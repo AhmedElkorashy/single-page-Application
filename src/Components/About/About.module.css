@@ -1,0 +1,32 @@
+.About {
+  color: white;
+  /* height: 100vh; */
+  height: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1abc9c;
+}
+.theStar {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 7rem;
+    height: 0.3125rem;
+    background-color: white;
+    right: 3rem;
+    top: 50%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 7rem;
+    height: 0.3125rem;
+    background-color: white;
+    left: 3rem;
+    top: 50%;
+  }
+}

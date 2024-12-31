@@ -1,0 +1,78 @@
+#root {
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.active {
+  &:focus {
+    background-color: #1abc9c;
+    border-radius: 5px;
+  }
+}
+.Footer {
+  background-color: #2c3e50;
+  color: white;
+}
+.TheFooter {
+  background-color: #17212a;
+}
+.icons {
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+}
+.navbar-brand {
+  &:focus {
+    background-color: transparent;
+  }
+}
+.navbar {
+  background-color: #2c3e50 !important;
+
+  NavLink {
+    color: white !important;
+  }
+}
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+.modal {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+.form-control {
+  border-color: transparent transparent rgba(0, 0, 0, 0.3) transparent;
+  &:focus {
+    box-shadow: unset;
+    border-color: transparent transparent rgba(0, 0, 0, 0.3) transparent;
+  }
+}
+.contact-btn {
+  background-color: rgb(26, 188, 156);
+  color: white !important;
+  &:hover {
+    background-color: rgb(26, 188, 156);
+  }
+  &:focus {
+    background-color: rgb(26, 188, 156);
+  }
+}
+.userName {
+  z-index: 99 !important;
+}
+.userNameAdd {
+  position: relative;
+  color: #1abc9c;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s;
+}
+.userNameRemove {
+  transition: all 0.8s;
+  opacity: 1;
+  color: #1abc9c;
+  transform: translateY(-1px);
+}
