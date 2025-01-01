@@ -2,7 +2,5 @@
 import React from 'react'
 
 export default function NotFound() {
-  return (
-    <div>NotFound</div>
-  )
+  return <div className="text-dark bg-danger NotFoundStyle py-5">NotFound</div>;
 }
